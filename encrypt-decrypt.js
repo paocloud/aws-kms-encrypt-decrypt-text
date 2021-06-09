@@ -12,7 +12,7 @@ const kmsClient = new AWS.KMS({
 async function encryptString(text) {
 
     const paramsEncrypt = {
-        KeyId: 'arn:aws:kms:ap-southeast-1:420813127978:key/85d4286c-5fdc-41eb-88ea-4419bc7fdcba',
+        KeyId: 'arn:aws:kms:ap-southeast-1:<aws_account_id>:key/85d4286c-aaaa-41eb-88ea-xxxxxx',
         Plaintext: new Buffer.from(text)
     };
 
